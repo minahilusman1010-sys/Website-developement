@@ -8,7 +8,7 @@
     <script>
         class Student {
             constructor(name) {
-                thi.student.name = name;
+                this.studentName = name;
             }
             static hello() { // static method
                 return "Hello!!!";
@@ -20,12 +20,12 @@
             return "Hi " + this.studentName;
         }
     }
-    myname = newstudent ("carol");
+    myname = new Student ("carol");
     //Call 'hello()' on class student and NOT on 'myname' object because 'hello()' is a static method it cannot access object
     document.getElementById("hello").innerHTML = Student.hello();
     // Call 'hi()' on the 'myname' object:
     document.getElementById("hi").innerHTML = myname.hi();
     //Call 'welcome()' can access the object ssince parameter is passed
-    document.getElementById("welcome").innerHTML = student.welcome(myname); 
+    document.getElementById("welcome").innerHTML = Student.welcome(myname); 
     </script>
 </body>
