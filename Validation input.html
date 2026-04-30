@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <h2>Form for Admission of college</h2>
+        <h4>Fill the form below to apply for the admission of college <b>NOTE: To take admission in this college minimum age required is 18</b></h4>
+
+        <script>
+            function validateForm() {
+                var x = document.form["myform1"]["fname"].value;
+                if (x=="") {
+                    alert ("Name must be filled out");
+                    return false;
+                }
+                var y = document.form["myform2"]["
+                f-fathername"].value;
+                if (y=="") {
+                    alert ("This feild must be filled")
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <form>
+            <fieldset>
+                <label>Is your age 18 or more?</label><br>
+                <input type="radio" id="Yes">Yes<br>
+                <input type="radio" id="No">No<br>
+            </fieldset>
+        </form>
+        <form name ="myform1" onsubmit-= "return validateForm()">
+            Name: <input type="text" name="fname">
+            <input type="submit" name="submit"> 
+               </form>
+               <form father name="myform2" onsubmit-="reyurn validateForm()">
+                Name: <input type="text" name="f-fathername">
+                <input type="submit" name="submit">
+               </form>
+    </body>
+</html>
