@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img class="image"
+        src="https://img.magnific.com/free-photo/nature-landscape-with-hand-holding-frame_23-2149389976.jpg?semt=ais_hybrid&w=740&q=80"
+        alt="magnific">
+    <img class="image"
+        src="https://img.magnific.com/free-photo/beautiful-lake-mountains_395237-44.jpg?semt=ais_hybrid&w=740&q=80"
+        alt="mountains">
+    <img class="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl37Ha8cXj2c-sdAN1bfoPl31dXDgypc55Kw&s"
+        alt="pathway">
+
+
+        <script>
+    //Automatic Slideshow - change image every 3 seconds
+    var myIndex = 0; //counting image
+    carousel(); //sarting function
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("image");
+        for (i = 0; i < x.length; i++) {//select all images and hide
+            x[i].style.display = "none"; //hiding all images
+        }
+        myIndex++;
+        if (myIndex > x.length) { myIndex = 1 }
+        x  [myIndex - 1].style.display = "block"; //shows current image other remain hidden
+        setTimeout(carousel, 2000);
+    }
+        </script>
+</body>
+</html>
