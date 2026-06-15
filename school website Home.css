@@ -1,0 +1,37 @@
+body   {
+    color: rgb(63, 63, 117);
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(204, 204, 161);
+}
+
+h1     {
+    color: rgb(40, 40, 114);
+}
+
+a    {
+    text-align: center;
+    font-weight: bolder;
+    color: black;
+    font-size: %;
+}
+
+ul li  {
+    font-weight: bold;
+}
+
+ul li:nth-child(1)::first-letter   {
+    font-size: 200%;
+}
+
+ul li:nth-child(2)::first-letter   {
+    font-size: 200%;
+}
+
+ul li:nth-child(3)::first-letter   {
+    font-size: 200%;
+}
+
+p   {
+    font-weight: bold;
+}
+

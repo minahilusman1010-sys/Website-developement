@@ -3,3 +3,12 @@ font-style: initial;
 text-align: justify;
 font-family: Georgia, 'Times New Roman', Times, serif
 }
+
+a{
+    text-decoration: solid;
+    font-weight: bold;
+}
+img {
+    width: max-content;
+    height: max-content;
+}
