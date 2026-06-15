@@ -8,7 +8,16 @@ a{
     text-decoration: solid;
     font-weight: bold;
 }
-img {
-    width: max-content;
-    height: max-content;
+.image {
+    width: 100%;
+    height: 60%;
+}
+footer   {
+    background-color: black;
+    color: aliceblue;
+    font-weight: bold;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    
 }
